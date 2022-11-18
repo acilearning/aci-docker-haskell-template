@@ -1,0 +1,8 @@
+** reverse chronological log of notes on commits
+
+* initial commit - working with hls -  462140f
+
+Just has a:
+
+- basic project with =cabal init=
+- an hie.yaml of `cradle: cabal:` (NOTE: implicit-cradle didn't work)
