@@ -1,6 +1,8 @@
-** reverse chronological log of notes on commits
+* reverse chronological log of notes on commits
 
-* initial commit - working with hls -  462140f
+** add simple persistent entity splice (working with hls)
+
+** initial commit - working with hls -  462140f
 
 Just has a:
 
