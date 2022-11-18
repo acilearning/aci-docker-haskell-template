@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+
+  # dependencies #
+  devcontainer:
+    build: containers/devcontainer
+    command: sh -c 'while sleep 1; do :; done'
+    init: true
+    volumes:
+      - .:/workspaces/smurf
+      - cabal:/home/haskell/.cabal
+      - cabal-store:/cabal-store
+    working_dir: /workspaces/smurf
+
+volumes:
+  cabal: null
+  cabal-store:
+    external: true
+  localstack: null
+  mongo: null
+  postgres: null
+
+networks:
+  default:
+    external: true
+    name: itprotv_bridge

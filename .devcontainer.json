@@ -1,0 +1,18 @@
+// https://code.visualstudio.com/docs/remote/devcontainerjson-reference
+{
+  "dockerComposeFile": "compose.yaml",
+  "extensions": [
+    "EditorConfig.EditorConfig",
+    "haskell.haskell"
+  ],
+  "initializeCommand": "tools/initialize.sh",
+  "onCreateCommand": "tools/on-create.sh",
+  "runServices": [
+    "devcontainer"
+  ],
+  "service": "devcontainer",
+  "settings": {
+    "editor.formatOnSave": true
+  },
+  "workspaceFolder": "/workspaces/smurf"
+}
