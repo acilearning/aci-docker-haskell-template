@@ -1,1 +1,15 @@
-.dist-newstyle
+.docker/*
+*.cabal
+dist
+dist-newstyle
+/cabal.project.local*
+
+# Internal system
+.DS_Store
+*.swp
+
+# common ctags
+.tags
+TAGS
+tags
+
