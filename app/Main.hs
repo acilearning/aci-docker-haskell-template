@@ -1,5 +1,6 @@
 {-# LANGUAGE DataKinds #-}
 {-# LANGUAGE DerivingStrategies #-}
+{-# LANGUAGE DerivingVia #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE GADTs #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
@@ -13,6 +14,7 @@
 
 module Main where
 
+import Data.Aeson
 import Database.Persist.TH
   ( mkMigrate,
     mkPersist,
@@ -30,6 +32,12 @@ User
     age Int
     deriving Show
 |]
+
+data Person = Person
+  { name :: String,
+    age :: Int
+  }
+  deriving (ToJSON) via "Evoke"
 
 main :: IO ()
 main = do
