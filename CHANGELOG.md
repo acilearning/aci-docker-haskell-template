@@ -1,4 +1,4 @@
-# Revision history for hls-issues-aci-docker-haskell
+# Revision history for aci-docker-haskell-template
 
 ## 0.1.0.0 -- YYYY-mm-dd
 

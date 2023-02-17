@@ -1,0 +1,15 @@
+
+allow-newer:
+  , amazonka-core:aeson
+  , amazonka:aeson
+packages:
+  .
+  vendor/amazonka-2.0.tar.gz
+  vendor/amazonka-cloudwatch-2.0.tar.gz
+  vendor/amazonka-core-2.0.tar.gz
+  vendor/amazonka-s3-2.0.tar.gz
+  vendor/amazonka-secretsmanager-2.0.tar.gz
+  vendor/amazonka-sns-2.0.tar.gz
+  vendor/amazonka-sqs-2.0.tar.gz
+  vendor/amazonka-sso-2.0.tar.gz
+  vendor/amazonka-sts-2.0.tar.gz

@@ -1,4 +1,4 @@
-FROM public.ecr.aws/acilearning/haskell:9.2.5-623c378cf6a3a9baeac44085d2a6e37c1e19adbd
+FROM public.ecr.aws/acilearning/haskell:9.4.4-be16c1942fc0c18391314839fdb1bd2e793c4287
 RUN \
   set -o errexit -o xtrace; \
   sudo apt-get update && \

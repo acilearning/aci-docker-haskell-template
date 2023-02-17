@@ -4,7 +4,7 @@ set -o errexit -o xtrace
 # This script is run inside the devcontainer just after it's created. Use it
 # for first-time setup.
 
-git config --global --add safe.directory /workspaces/smurf
+git config --global --add safe.directory /workspaces/aci-docker-haskell-template
 
 test -f cabal.project.local || cabal configure \
   --disable-optimization \

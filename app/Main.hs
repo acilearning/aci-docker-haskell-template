@@ -37,7 +37,6 @@ data Person = Person
   { name :: String,
     age :: Int
   }
-  deriving (ToJSON) via "Evoke"
 
 main :: IO ()
 main = do

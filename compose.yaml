@@ -8,10 +8,10 @@ services:
     command: sh -c 'while sleep 1; do :; done'
     init: true
     volumes:
-      - .:/workspaces/smurf
+      - .:/workspaces/aci-docker-haskell-template
       - cabal:/home/haskell/.cabal
       - cabal-store:/cabal-store
-    working_dir: /workspaces/smurf
+    working_dir: /workspaces/aci-docker-haskell-template
 
 volumes:
   cabal: null
